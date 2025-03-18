@@ -1,30 +1,73 @@
-# React + TypeScript + Vite
+# GiftExpertApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta aplicación es un buscador de GIFs desarrollado con React + TypeScript + Vite, basado en el curso "React: De cero a experto (Hooks y MERN)" de Fernando Herrera en Udemy.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Búsqueda de GIFs en tiempo real
+- Interfaz de usuario intuitiva y responsive
+- Integración con la API de GIPHY
+- Implementación de custom hooks
+- Desarrollado con TypeScript para mayor seguridad en el código
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- CSS puro para los estilos
 
-- Configure the top-level `parserOptions` property like this:
+## 📋 Prerrequisitos
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js (versión 14 o superior)
+- npm o yarn
+
+## 🔧 Instalación
+
+1. Clona el repositorio:
+```bash
+git clone <tu-repositorio>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instala las dependencias:
+```bash
+npm install
+# o
+yarn install
+```
+
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+# o
+yarn dev
+```
+
+## 🚀 Compilación para producción
+
+Para crear una versión de producción:
+
+```bash
+npm run build
+# o
+yarn build
+```
+
+Los archivos compilados se encontrarán en el directorio `dist`.
+
+## 🎯 Uso
+
+1. La aplicación mostrará un campo de búsqueda en la parte superior
+2. Ingresa el término de búsqueda para encontrar GIFs relacionados
+3. Los resultados se mostrarán en una cuadrícula debajo del campo de búsqueda
+4. Cada búsqueda nueva se agregará como una categoría separada
+
+## 👨‍💻 Créditos
+
+Este proyecto fue creado como parte del curso "React: De cero a experto (Hooks y MERN)" de Fernando Herrera.
+- Curso: [React: De cero a experto](https://www.udemy.com/course/react-cero-experto/)
+- Instructor: Fernando Herrera
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md para detalles
